@@ -10,6 +10,7 @@
     --Very-dark-grayish-blue: hsl(207, 13%, 34%);
     --Very-dark-black-blue: hsl(240, 10%, 16%);
     --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 
 *{
@@ -21,5 +22,30 @@
 body{
     Font-size: 16px;
     background-color: var(--Grayish-blue);
-    
+    min-height: 100vh;
 }
+
+header{
+    background-color: var(--Light-red);
+    height: 400px;
+    width: 100%;
+    border-radius: 1px 1px 1px 100px;
+    background-image: url("../Additional-resources/images/bg-pattern-intro-mobile.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    background-origin: border-box;
+    padding: 30px;
+}
+
+#First-Nav-Div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#Second-Nav-Div{
+    display: flex;
+    justify-content:flex-end;
+}
+
