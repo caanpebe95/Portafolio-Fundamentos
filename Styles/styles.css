@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*
 font-family: 'Overpass', sans-serif;
 font-family: 'Ubuntu', sans-serif;
@@ -181,6 +181,7 @@ nav{
     padding: 15px;
 }
 
+
 .First-Section-h2{
     font-size: 30px;
     margin:10px;
@@ -267,11 +268,39 @@ footer{
     background-attachment: fixed;
     background-color: var(--Very-dark-gray-blue);
     border-radius: 1px  100px 1px  1px ;
+    text-decoration: none;
+    list-style-type: none;
 }
 
-footer img{
-    display: block;
-    margin: auto;
-    width: 50%;
-    vertical-align: middle;
+.Footer-Item{
+    font-size: 30px;
+    margin: 20px 0px 20px 0px;
+}
+
+.Product-item a{ 
+text-decoration: none;
+color: white;
+}
+
+.Product-item { 
+    padding: 10px;
+}
+
+.Company-item{
+    padding: 10px;
+}
+
+.Company-item a{ 
+    text-decoration: none;
+    color: white;
+}
+
+.Connect-item{
+    padding:10px;
+}
+
+.footer-logo{
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
 }
