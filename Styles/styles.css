@@ -34,7 +34,6 @@ body{
 
 header{
     background-color: var(--Light-red);
-    height: 400px;
     width: 100%;
     border-radius: 1px 1px 1px 100px;
     background-image: url("../Additional-resources/images/bg-pattern-intro-mobile.svg");
@@ -43,7 +42,6 @@ header{
     background-size: auto;
     background-origin: border-box;
     background-repeat: no-repeat;
-    padding: 30px;
     font-family: 'Ubuntu', sans-serif;
 
 }
@@ -64,37 +62,94 @@ nav{
 
 input#menu-hamburguesa{
     visibility: hidden;
+    max-width: 100%;
+    height: 40px;
+}
+
+input#menu-hamburguesa~ul a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+input#menu-hamburguesa~ul li.first{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.second{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.third{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.fourth{
+    padding: 5px;
+}
+
+input#menu-hamburguesa~ul li.fifth{
+    padding: 5px;
+    border-radius: 100px;
 }
 
 input#menu-hamburguesa~ul{
+    background-color: var(--Very-dark-black-blue);
     width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    transition: all 300ms linear;
 }
 
-.first:hover{
-    background-color: var(--peach-color);
-    border-radius: 15px 0px 15px 0px;    
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
 }
 
-.second:hover{
-    background-color: var(--peach-color);
-    border-radius:  0px 15px 0px 15px;
-}
+@media only screen and (min-width:600px){
 
-.third:hover{
-    background-color: var(--peach-color);
-    border-radius:  15px  0px  15px 0px;
-}
+    label{
+        display: none;
+    }
 
-.fourth:hover{
-    background-color: var(--peach-color);
-    border-radius:  0px  15px  0px 15px;
-}
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+    }
 
-.fifth:hover{
-    background-color: var(--peach-color);
-    border-radius:  15px 0px  15px  0px ;
-}
+    input#menu-hamburguesa~ul>li{
+        padding: 10px;
+    }
 
+    input#menu-hamburguesa~ul>li.first:hover{
+        background-color: var(--peach-color);
+        border-radius: 15px 0px 15px 0px;    
+    }
+    
+    input#menu-hamburguesa~ul>li.second:hover{
+        background-color: var(--peach-color);
+        border-radius:  0px 15px 0px 15px;
+    }
+    
+    input#menu-hamburguesa~ul>li.third:hover{
+        background-color: var(--peach-color);
+        border-radius:  15px  0px  15px 0px;
+    }
+    
+    input#menu-hamburguesa~ul>li.fourth:hover{
+        background-color: var(--peach-color);
+        border-radius:  0px  15px  0px 15px;
+    }
+    
+    input#menu-hamburguesa~ul>li.fifth:hover{
+        background-color: var(--peach-color);
+        border-radius:  15px 0px  15px  0px ;
+    }
+
+
+}
 
 .header-div{
     color: black;
@@ -141,53 +196,11 @@ input#menu-hamburguesa~ul{
     text-decoration: none;
 }
 
-/*
-#navbar-links ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
 
-#navbar-links li{
-    list-style: none;
-}
-
-#navbar-links li a{
-    text-decoration: none;
-    color:white;
-    padding: 1rem;
-    display: block ;
-    font-size: 20px;
-}
-
-#navbar-links li.one:hover{
-    border-radius:  15px 0px  15px 0px;
-    background-color: var(--peach-color);
-}
-
-#navbar-links li.two:hover{
-    border-radius: 0px 15px 0px 15px;
-    background-color: var(--peach-color);
-}
-
-#navbar-links li.three:hover{
-    border-radius: 15px 0px 15px 0px;
-    background-color: var(--peach-color);
-}
-
-#navbar-links li.four:hover{
-    border-radius: 0px 15px 0px 15px;
-    background-color: var(--peach-color);
-}
-
-#navbar-links li.five:hover{
-    border-radius: 15px 0px  15px 0px;
-    background-color: var(--peach-color);
-}
-*/
 #First-Section{
     text-align: center;
     padding: 15px;
+
 }
 
 
@@ -265,6 +278,7 @@ input#menu-hamburguesa~ul{
     margin:15px 100px 50px 90px;
     font-size: 20px;
 }
+
 
 footer{
     display:flex;
