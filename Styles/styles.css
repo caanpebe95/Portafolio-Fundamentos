@@ -5,6 +5,13 @@
 font-family: 'Overpass', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --Light-red: hsl(356, 100%, 66%);
     --Very-light-red: hsl(355, 100%, 74%);
@@ -16,12 +23,6 @@ font-family: 'Ubuntu', sans-serif;
     --Very-dark-gray-blue: hsl(237, 17%, 21%);
     --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
     --peach-color: #FB9688;
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -54,6 +55,21 @@ nav{
     color: white;
 }
 
+.brand-image{
+    max-width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+input#menu-hamburguesa~ul{
+    width: 100%;
+}
+
 .first:hover{
     background-color: var(--peach-color);
     border-radius: 15px 0px 15px 0px;    
@@ -79,13 +95,6 @@ nav{
     border-radius:  15px 0px  15px  0px ;
 }
 
-
-.brand-image{
-    max-width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-}
 
 .header-div{
     color: black;
@@ -132,7 +141,7 @@ nav{
     text-decoration: none;
 }
 
-
+/*
 #navbar-links ul{
     margin: 0;
     padding: 0;
@@ -175,7 +184,7 @@ nav{
     border-radius: 15px 0px  15px 0px;
     background-color: var(--peach-color);
 }
-
+*/
 #First-Section{
     text-align: center;
     padding: 15px;
