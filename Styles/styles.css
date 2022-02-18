@@ -58,6 +58,8 @@ nav{
     height: 40px;
     display: flex;
     align-items: center;
+    margin-left: 30px;
+    margin-top: 50px;
 }
 
 input#menu-hamburguesa{
@@ -70,6 +72,9 @@ input#menu-hamburguesa~ul a{
     color: white;
     text-decoration: none;
     display: block;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
 }
 
 input#menu-hamburguesa~ul li.first{
@@ -107,7 +112,7 @@ input#menu-hamburguesa:checked ~ ul{
     right: 0;
 }
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:768px){
 
     label{
         display: none;
@@ -320,6 +325,11 @@ color: white;
 
 .Connect-item{
     padding:10px;
+}
+
+.Connect-item a{
+    text-decoration: none;
+    color: white;
 }
 
 .footer-logo{
